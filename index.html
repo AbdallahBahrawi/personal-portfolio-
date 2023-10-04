@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="container">
+        <div class="navbar">
+            <a href="#" onclick="changeColor(this)" class="link active"><i class="fa-solid fa-house"></i><p>home</p></a>
+            <a href="#" onclick="changeColor(this)" class="link"><i class="fa-solid fa-user"></i><p>about me</p></a>
+            <a href="#" onclick="changeColor(this)" class="link"><i class="fa-solid fa-phone"></i><p>contact me</p></a>
+        </div>
+    </nav>
+
+    <div class="clear"></div>
+
+    <section class="about-me">
+        <div class="my-details">
+            <h2>welcome to my site</h2>
+            <h1>Hi, I'm Abdallah Bahrawi, a <br>Frontend <span>Developer.</span></h1>
+            <p>I am a focused and and talented B.Sc.CSIT student <br>currently pursuing my bachelor degree from Asian <br>School of Management and Technology.</p>
+            <button class="button btn1">Hire me !</button>
+            <button class="button btn2">See My Project</button>
+        </div>
+        <img src="images/me1.jpg" alt="">
+    </section>
+
+    <script>
+        function changeColor(element) {
+            const navItems = document.querySelectorAll('.navbar a');
+            navItems.forEach(item => item.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>
